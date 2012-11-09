@@ -1,7 +1,9 @@
 # Microsoft Public License (Ms-PL)
 
 --------
+
 Copyright (C) 2012 Aiming Inc.
+
 --------
 
 Microsoft Public License (Ms-PL)
