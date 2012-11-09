@@ -64,3 +64,5 @@ public static IEnumerator F3Async(string s, Action<int> completed)
 	completed(result);
 }
 ```
+
+# [License](https://github.com/aiming/iterator-tasks/blob/master/LICENSE.md)
