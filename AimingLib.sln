@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorTasks", "IteratorTasks\IteratorTasks.csproj", "{3AB99F84-7E6F-4B01-9F57-AE5722C56893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTaskRunner", "SampleTaskRunner\SampleTaskRunner.csproj", "{5BF3A7F6-634B-4B1E-B3B2-134ECF8B1B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicSample", "BasicSample\BasicSample.csproj", "{B2D257A2-953D-434E-8056-C32E5F2D7489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIteratorTasks", "TestIteratorTasks\TestIteratorTasks.csproj", "{A3FBC7EE-46C0-4A22-BD44-FDFCE425672D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs37
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BasicSample\\BasicSample.csproj
+		SccProjectName1 = BasicSample
+		SccLocalPath1 = BasicSample
+		SccProjectUniqueName2 = IteratorTasks\\IteratorTasks.csproj
+		SccProjectName2 = IteratorTasks
+		SccLocalPath2 = IteratorTasks
+		SccProjectUniqueName3 = SampleTaskRunner\\SampleTaskRunner.csproj
+		SccProjectName3 = SampleTaskRunner
+		SccLocalPath3 = SampleTaskRunner
+		SccProjectUniqueName4 = TestIteratorTasks\\TestIteratorTasks.csproj
+		SccProjectName4 = TestIteratorTasks
+		SccLocalPath4 = TestIteratorTasks
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AB99F84-7E6F-4B01-9F57-AE5722C56893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB99F84-7E6F-4B01-9F57-AE5722C56893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB99F84-7E6F-4B01-9F57-AE5722C56893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB99F84-7E6F-4B01-9F57-AE5722C56893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF3A7F6-634B-4B1E-B3B2-134ECF8B1B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF3A7F6-634B-4B1E-B3B2-134ECF8B1B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF3A7F6-634B-4B1E-B3B2-134ECF8B1B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF3A7F6-634B-4B1E-B3B2-134ECF8B1B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D257A2-953D-434E-8056-C32E5F2D7489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D257A2-953D-434E-8056-C32E5F2D7489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D257A2-953D-434E-8056-C32E5F2D7489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D257A2-953D-434E-8056-C32E5F2D7489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FBC7EE-46C0-4A22-BD44-FDFCE425672D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FBC7EE-46C0-4A22-BD44-FDFCE425672D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FBC7EE-46C0-4A22-BD44-FDFCE425672D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FBC7EE-46C0-4A22-BD44-FDFCE425672D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
