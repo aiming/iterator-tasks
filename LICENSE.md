@@ -6,6 +6,8 @@ Copyright (C) 2012 Aiming Inc.
 
 The license of this library is based on the following license.
 
+--------
+
 # Microsoft Public License (Ms-PL)
 
 Microsoft Public License (Ms-PL)
