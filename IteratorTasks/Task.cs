@@ -93,13 +93,12 @@ namespace Aiming.IteratorTasks
 		{
 			if (Status == TaskStatus.Created) Status = TaskStatus.Running;
 			if (Status != TaskStatus.Running) return false;
-			if (Routine == null) return false;
 
-			bool hasNext;
+			bool hasNext = false;
 
 			try
 			{
-				hasNext = Routine.MoveNext();
+				if (Routine != null) hasNext = Routine.MoveNext();
 			}
 			catch (Exception exc)
 			{
@@ -128,6 +127,7 @@ namespace Aiming.IteratorTasks
 
 		public void Start(TaskScheduler scheduler)
 		{
+			if (Status == TaskStatus.Canceled) return;
 			if (Status != TaskStatus.Created)
 				throw new InvalidOperationException();
 
@@ -185,10 +185,7 @@ namespace Aiming.IteratorTasks
 		/// </remarks>
 		public Task OnComplete(Action<Task> callback)
 		{
-			if (IsDone)
-				Invoke(callback);
-			else
-				_callback.Add(callback);
+			_callback.Add(callback);
 
 			return this;
 		}
@@ -233,7 +230,7 @@ namespace Aiming.IteratorTasks
 		/// <summary>
 		/// タスクをキャンセルします。
 		/// </summary>
-		public void Cancel()
+		public Task Cancel()
 		{
 			if (Cancellation == null)
 				throw new InvalidOperationException("Can't cancel Task.");
@@ -241,9 +238,11 @@ namespace Aiming.IteratorTasks
 			Cancellation.Cancel();
 
 			MoveNext();
+
+			return this;
 		}
 
-		public void Cancel(Exception e)
+		public Task Cancel(Exception e)
 		{
 			if (Cancellation == null)
 				throw new InvalidOperationException("Can't cancel Task.");
@@ -251,11 +250,15 @@ namespace Aiming.IteratorTasks
 			Cancellation.Cancel(e);
 
 			MoveNext();
+
+			return this;
 		}
 
-		public void ForceCancel()
+		public Task ForceCancel()
 		{
 			ForceCancel(new TaskCanceledException("Task force canceled."));
+
+			return this;
 		}
 		
 		/// <summary>
@@ -321,7 +324,7 @@ namespace Aiming.IteratorTasks
 			return _empty;
 		}
 
-		private readonly static Task _empty = new Task(TaskStatus.RanToCompletion);
+		private readonly static Task _empty = new Task(TaskStatus.Created);
 
 		/// <summary>
 		/// 単に値を返す（作った時点で完了済み、最初から Return の値を持つ）タスクを生成。
