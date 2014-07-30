@@ -6,7 +6,7 @@ Iterator Tasks is a iterator-based coroutine class library.
 
 One of the purpose of Iterator Tasks is to simplify asynchronous operations on Unity 3D game engine. Unity is built on Mono, open source .NET development framework. It however uses older version which correspond approximately to .NET Framework 3.5 and C# 3.0. Thus, there is no Task class and async/await support.
 
-Alternatively, Unity provides iterator-based coroutine framework for asynchronous operation. For example, following code awaits web access completoin without blocking a thread by using a yield return statement.
+Alternatively, Unity provides iterator-based coroutine framework for asynchronous operation. For example, following code awaits web access completion without blocking a thread by using a yield return statement.
 
 ```c#
 using UnityEngine;
